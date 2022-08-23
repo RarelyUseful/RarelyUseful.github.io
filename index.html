@@ -9,15 +9,16 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="assets/img/favicon.ico" rel="icon" />
+    <link href="assets/img/logo128.png" rel="logo-128" />
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Michroma|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
-
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -36,10 +37,12 @@
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center justify-content-lg-between">
         <h1 class="logo me-auto me-lg-0">
-          <a href="index.html">PB<span>.</span></a>
+          <!-- <a href="index.html"><PB<span>.</span>></a> -->
+          <a href="index.html" class="logo me-auto me-lg-0"
+            ><img src="assets/img/logo128.png" alt="" class="img-fluid"
+          /></a>
         </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
@@ -48,7 +51,7 @@
             <li><a class="nav-link scrollto" href="#Skills">Skills</a></li>
             <li><a class="nav-link scrollto" href="#MyWork">My Work</a></li>
             <li class="dropdown">
-              <a href="#"><span>Links</span> <i class="bi bi-chevron-down"></i></a>
+              <a href="#MyWork"><span>Links</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                 <li><a href="https://www.linkedin.com/in/pawel-bialobrodzki">My LinkedIn</a></li>
                 <li><a href="https://github.com/RarelyUseful">My GitHub</a></li>
@@ -68,26 +71,26 @@
         <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
           <div class="col-xl-6 col-lg-8">
             <h1>Paweł Białobrodzki<span>.</span></h1>
-            <h2>Frontend Developer</h2>
+            <h2>JavaScript Developer</h2>
           </div>
         </div>
 
         <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
           <div class="col-xl-2 col-md-4">
             <div class="icon-box">
-              <i class="ri-calendar-todo-line"></i>
+              <i class="bx bxl-javascript"></i>
               <h3><a href="">JavaScript</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4">
             <div class="icon-box">
-              <i class="ri-bar-chart-box-line"></i>
+              <i class="bx bxl-react"></i>
               <h3><a href="">React.js</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4">
             <div class="icon-box">
-              <i class="ri-store-line"></i>
+              <i class="bx bxl-angular"></i>
               <h3><a href="">Angular</a></h3>
             </div>
           </div>
@@ -95,14 +98,14 @@
         <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
           <div class="col-xl-2 col-md-4">
             <div class="icon-box">
-              <i class="ri-paint-brush-line"></i>
-              <h3><a href="">Java</a></h3>
+              <i class="bx bxl-nodejs"></i>
+              <h3><a href="">Node.js</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4">
             <div class="icon-box">
-              <i class="ri-database-2-line"></i>
-              <h3><a href="">Node.js</a></h3>
+              <i class="bx bx-pencil"></i>
+              <h3><a href="#contact">Contact me</a></h3>
             </div>
           </div>
         </div>
@@ -125,27 +128,33 @@
               data-aos-delay="100"
             >
               <h3>Hi, I'm Paweł.</h3>
-              <h4>Aspiring Frontend Developer.</h4>
+              <h4>Aspiring JavaScript Developer.</h4>
               <p class="fst-italic">
                 I have recently completed postgraduate in "JavaScript Developer" from
-                <strong>Bialystok University of Technology</strong>. During it I practised using two most
-                popular frameworks (<strong>React and Angular</strong>) to build my first applications. I also
-                learned how to use <strong>Node.js</strong> and how ServerSide applications work. <br />
-                Talking with experienced programmers gave me great perspective on
+                <strong>Bialystok University of Technology</strong>. During it I learned how to use two most
+                popular frameworks (<strong>React and Angular</strong>) and created my first applications. I
+                also learned how to use <strong>Node.js</strong> and how ServerSide applications work. Talking
+                with experienced programmers gave me great perspective on
                 <strong>work and education</strong> and motivated me even more to learn as much is I could.<br />
-                <strong>I am currently looking for career opportunity</strong> where I will be able to expand
-                my knowledge by working on bigger projects, assisted by senior developers.
               </p>
 
               <p class="fst-italic">
                 Obviously my passion for programming started earlier. I used various technologies, because as
-                self-tought I wanted to learn every major language before commiting to one. Most of my time i
+                self-tought I wanted to learn few major languages before commiting to one. Most of my time i
                 spent using Java. I even got my first job making
                 <strong>app for "Radio ZET"</strong> using HarmonyOS (which was basically Java). That app was
-                dedicated to Huaweii Smartwatch. So experiance wasn't really smooth. But even before that, my
-                focus already switched to <strong>frontend development</strong>. That's why i
-                <strong>switched to JavaScript</strong>. I want to be great at that, but I am still open to
-                possibility of becoming fullstack developer.
+                dedicated to Huaweii Smartwatch, so experience wasn't really smooth. I still liked it, and
+                couldn't wait to get my hands on another project.
+              </p>
+              <p class="fst-italic">
+                As soon as I finished my postgraduate, I applied for
+                <strong>Summer Internship in SoftwareHut</strong>. I learned how to build websites using HTML
+                and CSS and took part in larger project that used <strong>Angular</strong> to create in-house
+                recruitment tool to improve HR efficiency. I got plenty real-life experience and mentoring and
+                had an amazing opportunity to see how software is made from the ground up.<br />
+                I'm really happy to keep doing this and
+                <strong>I'm currently looking for career opportunity</strong> where I will be able to expand
+                my knowledge by working on bigger projects, assisted by senior developers.
               </p>
             </div>
           </div>
@@ -176,12 +185,14 @@
                 <li><i class="ri-check-double-line"></i> Cypress</li>
                 <li><i class="ri-check-double-line"></i> Node.js (Express)</li>
                 <li><i class="ri-check-double-line"></i> MongoDB (Mongoose)</li>
-                <li><i class="ri-check-double-line"></i> Java, Dart & Flutter, Python</li>
+                <li><i class="ri-check-double-line"></i> Java, Flutter, Python</li>
               </ul>
               <p class="fst-italic">Other useful things:</p>
               <ul>
-                <li><i class="ri-check-double-line"></i> Git, GitHub, BitBucket, SourceTree</li>
-                <li><i class="ri-check-double-line"></i> SCRUM / Agile</li>
+                <li><i class="ri-check-line"></i> HTLM, CSS (Sass, BEM)</li>
+                <li><i class="ri-check-line"></i> English (C1), Polish (Native)</li>
+                <li><i class="ri-check-line"></i> Git, GitHub, BitBucket, SourceTree</li>
+                <li><i class="ri-check-line"></i> SCRUM / Agile</li>
               </ul>
             </div>
             <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="100">
@@ -201,72 +212,16 @@
           </div>
 
           <div class="row">
-            <!--   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4><a href="https://github.com/RarelyUseful/React_2D_arrays">Code of React 2D Arrays</a></h4>
-                <p>
-                  GitHub repository with source code. Contains two 'games' that fuction on editing 2D Arrays -
-                  "Bouncing Ball" and Conway's "Game of life"
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4><a href="https://github.com/RarelyUseful/ng_Snake">Code of ng_Snake</a></h4>
-                <p>GitHub repository with source code. Contains standard Snake game written with Angular.</p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4>
-                  <a href="https://github.com/RarelyUseful/React_BasicShopApp">Code of React Shopping App</a>
-                </h4>
-                <p>
-                  GitHub repository with source code. Contains two versions of simple Shopping App. First one
-                  is done on states and props, 2nd one with Redux and Axios.
-                </p>
-              </div>
-            </div> -->
-
             <div
               class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
               <div class="icon-box">
-                <div class="icon"><i class="bx bx-world"></i></div>
-                <h4><a href="https://main.d3wgcktvrcot3.amplifyapp.com/">2D Arrays</a></h4>
+                <div class="icon"><i class="bx bxl-angular"></i></div>
+                <h4><a href="https://main.d99kfu8lgjz0d.amplifyapp.com/intro/normal">Angular Snake</a></h4>
                 <p>
-                  Contains two 'games' that fuction on editing 2D Arrays - "Bouncing Ball" and Conway's "Game
-                  of life". Written in JS then remade for React. Check my Github to see source code. Hosted
-                  with AWS free tier, might load longer on cold start.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-world"></i></div>
-                <h4><a href="https://main.d99kfu8lgjz0d.amplifyapp.com/intro/normal">ng_Snake</a></h4>
-                <p>
-                  My implementation of well known game - Snake. Use any 4-digit PIN to log in. Written in
+                  My implementation of well known game Snake. Use any 4-digit PIN to log in. Written in
                   Angular using RxJS and template driven forms. Check my Github to see source code. Hosted
                   with AWS free tier, might load longer on cold start.
                 </p>
@@ -276,18 +231,61 @@
             <div
               class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
               data-aos="zoom-in"
-              data-aos-delay="100"
+              data-aos-delay="200"
             >
               <div class="icon-box">
-                <div class="icon"><i class="bx bx-world"></i></div>
+                <div class="icon"><i class="bx bxl-react"></i></div>
                 <h4>
-                  <a href="https://main.d3i3mzynxrfzb0.amplifyapp.com">Basic Shopping App</a>
+                  <a href="https://main.d3i3mzynxrfzb0.amplifyapp.com">React Shopping List</a>
                 </h4>
                 <p>
-                  My implementation of simple Shopping App. Written in React using axios, redux and hooks.
-                  Check my Github to see source code. Hosted with AWS free tier, might load longer on cold
-                  start. --API Hosting is work in progress, so treat this as unfinished.--
+                  My implementation of simple Shopping List. Use any credentials to log in. Written in React
+                  using axios, redux and hooks. API responses are delayed by 2 seconds by design. Check my
+                  Github to see source code. Hosted with AWS free tier, might load longer on cold start.
                 </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-react"></i></div>
+                <h4><a href="https://main.d3wgcktvrcot3.amplifyapp.com/">2D Arrays</a></h4>
+                <p>
+                  Contains two 'games' based on editing 2D Arrays - "Bouncing Ball" and Conway's "Game of
+                  life". Written in pure JavaScript then remade for React. Check my Github to see source code.
+                  Hosted with AWS free tier, might load longer on cold start.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-html5"></i></div>
+                <h4><a href="https://main.d1f8xwwe8kh6af.amplifyapp.com/">Responsive Web</a></h4>
+                <p>
+                  Website created according to visualization. Uses only HTML and CSS. Made for SoftwareHut
+                  during summer internship, as one of the tasks. Hosted with AWS free tier, might load longer
+                  on cold start.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-github"></i></div>
+                <h4><a href="https://github.com/RarelyUseful">My GitHub Profile</a></h4>
+                <p>If you're curious enough to read my code or check commit history - here it is.</p>
               </div>
             </div>
           </div>
@@ -313,13 +311,13 @@
                 </div>
 
                 <div class="email">
-                  <i class="bi bi-envelope"></i>
+                  <i class="ri-mail-send-line"></i>
                   <h4>Email:</h4>
-                  <p>bialobrodzki@gmail.com</p>
+                  <p><a href="mailto:bialobrodzki@gmail.com">bialobrodzki@gmail.com</a></p>
                 </div>
 
                 <div class="email">
-                  <i class="bx bxl-linkedin"></i>
+                  <i class="ri-linkedin-fill"></i>
                   <h4>LinkedIn:</h4>
                   <p>
                     <a href="https://www.linkedin.com/in/pawel-bialobrodzki">Pawel Bialobrodzki</a>

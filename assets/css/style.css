@@ -8,6 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -371,10 +375,10 @@ h6 {
 #hero h1 {
   margin: 0;
   font-size: 56px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 64px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Michroma", sans-serif;
 }
 #hero h1 span {
   color: #ffc451;
@@ -383,6 +387,7 @@ h6 {
   color: rgba(255, 255, 255, 0.9);
   margin: 10px 0 0 0;
   font-size: 24px;
+  font-family: "Michroma", sans-serif;
 }
 #hero .icon-box {
   padding: 30px 20px;
@@ -445,7 +450,7 @@ h6 {
   padding: 0;
 }
 .about .content ul li {
-  padding: 0 0 8px 26px;
+  padding: 0 0 0px 26px;
   position: relative;
 }
 .about .content ul i {
@@ -511,7 +516,7 @@ section {
   padding: 0;
 }
 .about .content ul li {
-  padding: 0 0 8px 26px;
+  padding: 0 0 1px 26px;
   position: relative;
 }
 .about .content ul i {
